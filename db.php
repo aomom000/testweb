@@ -10,5 +10,8 @@
     if($mysql -> connect_error){
         echo "felied to connect to MySQL:".$mysqli -> connect_error;
         exit();
-    }else
+    }else{
+        echo "connect sucsess";
+    }
+    
 ?>
