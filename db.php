@@ -19,22 +19,7 @@ table, th, td {
         echo "connect sucsess";
     }
     
-    $conn = "SELECT * FROM `book` where '1'";
-    $result = mysqli_query($mysql, $conn);
+    //$conn = "SELECT * FROM `book`";
+    //$result = mysqli_query($mysql, $conn);
 
-    if ($result->num_rows > 0) {
-        echo "<table><tr><th>BookID</th><th>BookName</th><th>TypeID</th>
-        <th>StatusID</th><th>Publish</th><th>UnitPrice</th><th>UnitRent</th>
-        <th>DayAmount</th><th>Picture</th><th>BookDate</th></tr>";
-        while($row = $result->fetch_assoc()){
-        echo "<tr><td> " .$row["BookID"]."</td><td>" .$row["BookName"]
-                ."</td><td>" .$row["TypeID"]."</td><td>" .$row["StatusID"]
-                ."</td><td>" .$row["Publish"]."</td><td>" .$row["UnitPrice"]
-                ."</td><td>" .$row["UnitRent"]."</td><td>" .$row["DayAmount"]
-                ."</td><td>" .$row["Picture"]."</td><td>" .$row["BookDate"];
-        }
-    }
-
-    
-    
 ?>
